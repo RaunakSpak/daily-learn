@@ -81,3 +81,45 @@ document.getElementById("demo").innerHTML += a;
 
 
 
+// while loop
+let count = 1;
+
+while (count <= 5) {
+    console.log(`Count is: ${count}`);
+    count++;
+}
+
+// do while loop
+let increase = 1;
+
+do {
+    console.log(`Count is: ${increase}`);
+    increase++;
+} while (increase <= 5);
+
+
+// break and continue
+
+// break statement
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        console.log("Breaking the loop at:", i);
+        break; // Exits the loop when i equals 5
+    }
+    console.log(i);
+}
+
+// continue
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        console.log("Skipping:", i);
+        continue; // Skips the current iteration when i equals 5
+    }
+    console.log(i);
+}
+
+// iterable example
+const myArray = [1, 2, 3];
+for (const value of myArray) {
+    console.log(value); 
+}
