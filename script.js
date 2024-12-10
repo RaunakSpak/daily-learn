@@ -1,26 +1,48 @@
-// create a map() in javascript
-const fruits = new Map([
-    ['Apple', 500],
-    ['Banana', 60],
-    ['Orange', 100],
-]);
+// Javascript Objects literal
+const person = {
+    firstName: "Shubham",
+    lastName: "Gawade",
+    address: "Virar",
+    age: 24,
+    eyeColor: "blue",
+    skill: function () {
+        return {
+            languages: ["Hindi", "Marathi", "English"],
+            isEmployee: true,
+        };
+    }
+};
+console.log(person.skill());
 
-console.log(fruits);
-
-// regular expression
-const text = "Hello World!";
-const regex = /world/i;
-
-console.log(regex.test(text));
 
 
-// try, catch & throw block in js example
-try {
-    let jsonData = '{"name": "John", "age": 30}';
-    let user = JSON.parse(jsonData);
-    console.log(user.name); 
-} catch (error) {
-    console.log("Invalid JSON data");
-} finally {
-    console.log("Parsing complete");
+
+// JavaScript empty object create
+const car = {};
+car.name = "BMW";
+car.color = "Black";
+car.model = "F90 m5 cs";
+car.oil = "Petrol";
+
+
+
+// JavaScript object using new Object()
+const person1 = new Object();
+person1.firstName = "John";
+person1.lastName = "Doe";
+person1.age = 50;
+person1.eyeColor = "blue";
+
+
+
+
+
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
 }
+const myFather = new Person("John", "Doe", 50, "blue");
+console.log(myFather);
+
