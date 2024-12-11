@@ -1,48 +1,22 @@
-// Javascript Objects literal
-const person = {
-    firstName: "Shubham",
-    lastName: "Gawade",
-    address: "Virar",
-    age: 24,
-    eyeColor: "blue",
-    skill: function () {
-        return {
-            languages: ["Hindi", "Marathi", "English"],
-            isEmployee: true,
-        };
-    }
-};
-console.log(person.skill());
+let score = prompt("Enter your grade(0-100) : ");
 
-
-
-
-// JavaScript empty object create
-const car = {};
-car.name = "BMW";
-car.color = "Black";
-car.model = "F90 m5 cs";
-car.oil = "Petrol";
-
-
-
-// JavaScript object using new Object()
-const person1 = new Object();
-person1.firstName = "John";
-person1.lastName = "Doe";
-person1.age = 50;
-person1.eyeColor = "blue";
-
-
-
-
-
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
+if(score >= 90 && score <= 100)
+{
+    console.log("Grade A");
 }
-const myFather = new Person("John", "Doe", 50, "blue");
-console.log(myFather);
-
+else if(score >= 70 && score <= 89)
+{
+    console.log("Grade B");
+}
+else if(score >= 60 && score <= 69)
+{
+    console.log("Grade C");
+}
+else if(score >= 50 && score <= 59)
+{
+    console.log("Grade D");
+}
+else(score <= 49)
+{
+    console.log("Fail");
+}
