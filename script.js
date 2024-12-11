@@ -16,7 +16,8 @@ else if(score >= 50 && score <= 59)
 {
     console.log("Grade D");
 }
-else(score <= 49)
+else if(score <= 49)
 {
     console.log("Fail");
 }
+
