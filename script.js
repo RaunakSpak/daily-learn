@@ -1,23 +1,11 @@
-let score = prompt("Enter your grade(0-100) : ");
+// DOM (Documents Objects Model) in javascript 
 
-if(score >= 90 && score <= 100)
-{
-    console.log("Grade A");
-}
-else if(score >= 70 && score <= 89)
-{
-    console.log("Grade B");
-}
-else if(score >= 60 && score <= 69)
-{
-    console.log("Grade C");
-}
-else if(score >= 50 && score <= 59)
-{
-    console.log("Grade D");
-}
-else if(score <= 49)
-{
-    console.log("Fail");
+let divs = document.querySelectorAll(".box");
+
+let idx = 1;
+for(div of divs){
+    div.innerText = `Unique value ${idx}`;
+    idx++;
 }
 
+document.getElementById("demo").innerText = "Raunak vishwakarma";

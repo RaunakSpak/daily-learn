@@ -1,14 +1,11 @@
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px 10px;
-    justify-content: center;
-    
-}
+.box{
 
-.grid-container > div{
-    background-color: red;
-    padding: 10px;
+    width: 100px;
+    height: 50px;
+    background: rgb(64, 233, 224);
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
     text-align: center;
+    display: inline-block;
 }
- 
