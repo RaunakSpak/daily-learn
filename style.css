@@ -1,0 +1,38 @@
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.cell.taken {
+    pointer-events: none;
+}
+
+.winner {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: green;
+}
+
+.reset {
+    margin-top: 10px;
+    padding: 5px 17px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
